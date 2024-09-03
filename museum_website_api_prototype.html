@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Website</title>
+    <style>
+        #mlogo{
+            /* border: 2px solid red; */
+            width: 50px;
+            padding: 0px;
+            border-radius: 10px;
+        }
+        body{
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #navbar1 {
+            background-color: #000000;
+            overflow: hidden;
+        }
+        #compactbox{
+            /* border: 2px solid wheat; */
+            width: 550px;
+            margin: auto;
+        }
+        #navbar1 a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 40px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            /* border: 2px solid red; */
+        }
+        .contenthead{
+            font-size: 38px;
+            border-bottom: 3px solid black;
+            padding-bottom: 15px;
+            display: block;
+            width: 500px;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .contentbody{
+            text-align: center;
+            padding: 25px;
+            background-color: white;
+            margin-top: 50px;
+        }
+        #popup{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(238, 177, 10);
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            padding: 5px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            transition-duration: 0.3s;
+        }
+        #popup:active{
+            transform: translateY(10px);
+        }
+        #openedwindow{
+            display: none;
+            width: 420px;
+            height: 500px;
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+            transition-duration: 0.3s;
+            background-color: rgb(186, 183, 183);
+            border-radius: 10px;
+            padding: 10px;
+            border: 3px solid black;
+        }
+        .botside{
+            width: 200px;
+            border-radius: 5px;
+            padding: 4px;
+            background-color: white;
+            box-shadow: -5px 8px black;
+        }
+        #closbtn{
+            position: absolute;
+            right: 15px;
+            background-color: transparent;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px;
+            padding-right: 7px;
+            padding-left: 7px;
+            color: red;
+            border-radius: 5px;
+            transition-duration: 0.3s;
+
+        }
+        #closbtn:hover{
+            transform: scale(1.2);
+            background-color: red;
+            color: white;
+        }
+        .usercl{
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            width: 200px;
+            border-radius: 5px;
+            padding: 4px;
+            box-shadow: 5px 8px black;
+            margin-bottom: 15px; 
+            transition-duration: 0.3s;
+        }
+        .userside{
+            position: absolute;
+            margin-top: 30px;
+            right: 10px;
+        }
+        .usercl:hover{
+            background-color: rgb(137, 136, 136);
+            color: white;
+            /* box-shadow: 3px 4px black; */
+        }
+        .usercl:active{
+            transform: translate(5px, 3px)
+        }
+        #mlogoid{
+            padding-top: 25px !important;
+            padding-bottom: 0px !important;
+        }
+        #maintitle{
+            font-size: 55px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            background: url("https://sc0.blr1.cdn.digitaloceanspaces.com/article/109461-kfouietejf-1546278550.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* border: 2px solid red; */
+            height: 600px;
+            /* color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #hereugo{
+            margin-top: 30px;
+        }
+        #newidhere{
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar1">
+        <div id="compactbox">
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a id="mlogoid" href="#"><img id="mlogo" src="https://static.vecteezy.com/system/resources/previews/019/138/505/non_2x/museum-icon-for-your-website-design-logo-app-ui-free-vector.jpg" alt="Museum"></a>
+            <a href="#=">Help</a>
+            <a id="newidhere" href="#">Or ChatBot Here</a>
+        </div>
+    </div>
+    <div id="maintitle">
+        This is Website of Museum
+    </div>
+
+    <div class="contentbody">
+        <div class="contenthead">Museum Content Here</div>
+        <div id="hereugo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus exercitationem reprehenderit aperiam aut consequatur libero in nostrum sapiente quis dicta nihil, similique quos doloribus cupiditate omnis voluptatum suscipit quidem voluptas, debitis assumenda! Doloribus ex cupiditate eum error ab amet sed alias corporis ea laboriosam est exercitationem debitis maxime necessitatibus fugiat aliquam sequi numquam, excepturi veniam minima sunt esse. Illum blanditiis sit a numquam, amet inventore illo ducimus mollitia alias ipsum voluptate, quos quas atque ratione consequatur excepturi expedita laborum autem facilis quisquam velit? Numquam doloremque iure soluta sed, sint nostrum adipisci dicta excepturi harum pariatur odit omnis, ut, nemo reiciendis?
+        </div>
+    </div>
+    <div id="popup">ChatBot</div>
+    <div id="openedwindow">
+        <div id="closbtn">x</div>
+        <div class="botside">Hello, How may I help you?</div>
+        <div class="userside">
+            <div class="usercl" id="userid1">Book Ticket</div>
+            <div class="usercl" id="userid2">Show Prices</div>
+            <div class="usercl" id="userid3">Show Events</div>
+            <div class="usercl" id="userid4">Show Timings</div>
+        </div>
+    </div>
+</body>
+<script>
+    let popup = document.getElementById("popup")
+    let openedwindow = document.getElementById("openedwindow")
+    let closbtn = document.getElementById("closbtn")
+    popup.addEventListener("click", ()=>{
+        openedwindow.style.display = "block"
+        popup.style.display = "none"
+    })
+    closbtn.addEventListener("click", ()=>{
+        openedwindow.style.display = "none"
+        popup.style.display = "flex"
+    })
+</script>
+
+</html>
